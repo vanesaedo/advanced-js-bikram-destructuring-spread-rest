@@ -17,7 +17,7 @@ En esta ocasión, el bikram se dividirá en :crossed_swords: Pair Programming :c
 
 ### Destructuring arrays ###
 
-- [ ] 1.- Dado el objeto **empleados**, extrae la empleada Ana completa.
+- [X] 1.- Dado el objeto **empleados**, extrae la empleada Ana completa.
 ```
 const empleados = [
     { name: "Luis", email: "Luis@gmail.com" },
@@ -26,9 +26,9 @@ const empleados = [
 ];
 ```
 
-- [ ] 2.- Dado el objeto **empleados**, extrae el email del empleado Luis --> Luis@gmail.com
+- [X] 2.- Dado el objeto **empleados**, extrae el email del empleado Luis --> Luis@gmail.com
 
-- [ ] 3.- Usa destructuración para cambiar los valores de a y b;
+- [X] 3.- Usa destructuración para cambiar los valores de a y b;
 
 ```
 // Inicialmente
@@ -40,7 +40,7 @@ let a = 3;
 let b = 5;
 ```
 
-- [ ] 4.- Dado el objeto **HIGH_TEMPERATURES**
+- [X] 4.- Dado el objeto **HIGH_TEMPERATURES**
 ```
 const HIGH_TEMPERATURES = {
   yesterday: 30,
@@ -62,19 +62,19 @@ console.log(maximaManana);
 
 ### Spread/Rest ###
 
-- [ ] 5.- Escribe una función llamada **sumEveryOther** que pueda recibir cualquier cantidad de números y devuelva la suma de todos los demás argumentos.
+- [X] 5.- Escribe una función llamada **sumEveryOther** que pueda recibir cualquier cantidad de números y devuelva la suma de todos los demás argumentos.
 ```
 sumEveryOther(6, 8, 2, 3, 1); //20
 sumEveryOther(11, 3, 12); //26
 ```
 
-- [ ] 6.- Escribe una función llamada **addOnlyNums** que pueda recibir cualquier número de argumentos (incluyendo números y strings y retorne la suma solo de los números).
+- [X] 6.- Escribe una función llamada **addOnlyNums** que pueda recibir cualquier número de argumentos (incluyendo números y strings y retorne la suma solo de los números).
 ```
 addOnlyNums(1, "perro", 2, 4); //7
 ```
 
 
-- [ ] 7.- Escribe una función llamada **countTheArgs** que pueda recibir cualquier número de argumentos y devuelva un número que indique cuántos argumentos ha recibido.
+- [X] 7.- Escribe una función llamada **countTheArgs** que pueda recibir cualquier número de argumentos y devuelva un número que indique cuántos argumentos ha recibido.
 
 ```
 countTheArgs("gato", "perro"); //2
@@ -82,7 +82,7 @@ countTheArgs("gato", "perro", "pollo", "oso"); //4
 
 ```
 
-- [ ] 8.- Escribe una función llamada **combineTwoArrays** que reciba dos array cómo argumentos y devuelva solo un array que combine los dos (usando spread operator).
+- [X] 8.- Escribe una función llamada **combineTwoArrays** que reciba dos array cómo argumentos y devuelva solo un array que combine los dos (usando spread operator).
 
 - [ ] 9.- Escriba una función llamada onlyUniques que acepte cualquier número de argumentos y devuelva un array de elementos únicos, sin repetidos.
  ```
