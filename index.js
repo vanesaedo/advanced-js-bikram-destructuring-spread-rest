@@ -92,14 +92,24 @@ const combineTwoArrays = (x,y) => [...x, ...y];
 
 //9
 
+//EJERCICIO 9 -------Vero
+function onlyUniques(...rest) {
+  let result = []
+  for (let i = 0; i < rest.length; i++) {
+      if (result.includes(rest[i]) == false) {
+          result.push(rest[i])
+      }
+
+  }
+  return result
+}
+
 /*
 function combineTwoArrays (...rest) {
-
-function iterar (...rest){
-    let arg=[];
-
-        for (let i; i < rest.length; i++){
-        
+  let arg=[];
+    for (let i; i < rest.length; i++){
+        if (arg.includes(rest[i]) == false) {rest[i])
+        }
         arg+= rest[i];
     }
 const onlyUniques = (iterar(...rest)) => 
@@ -149,3 +159,91 @@ const onlyUniques = (...rest) => {
 
 */
 //10
+
+/* posibles soluciones
+
+//Con for
+function combineAllArrays(...args) {
+
+  let resultado = [];
+
+args.forEach(array => resultado = [...resultado,...array]);
+  return resultado;
+}
+
+//Ejercicio 10 Bikram spred-rest - Solución de Adri
+
+function combineAllArrays(...args) {
+
+    let resultado = [];
+
+    for (let i = 0; i < args.length; i++) {
+
+       resultado = resultado.concat(args[i]);
+    }
+  }
+
+
+  // Refactorización 10 de Alejandro
+
+  function combineAllArrays(...args) {
+
+    let resultado = [];
+  
+    for (let i = 0; i < args.length; i++) {
+  
+       resultado = [...resultado,...args[i]];
+    }
+    return resultado;
+  }
+  
+  combineAllArrays([2, 7, 3, 1], [2, 7, 4, 12], [2, 44, 22, 7, 3, 1]); // [2, 7, 3, 1, 2, 7, 4, 12, 2, 44, 22, 7, 3, 1]
+
+
+//Otra
+
+  function combineAllArrays(x,y,...z) {
+    let array3 = x.concat(y);
+    return arrayFinal = array3.concat(...z)
+}
+//Otra 
+function combineAllArrays(...z) {
+  let array = [];
+  return arrayFinal = array.concat(...z)
+}
+*/
+//Otra
+let combineAllArrays = (...z) => [].concat(...z)
+
+
+
+
+//11 
+//Ejercicio 11 Bikram spred-rest
+
+function sumAndSquare (...args){
+    
+    let cuadrado = args.map(item => item * item);
+    
+    return cuadrado.reduce((acc, item) => acc + item, 0);
+}
+
+/*
+
+//Refactorización de Alejandro 1
+function sumAndSquare (...args){
+  return args
+          .map(item => item * item) // cuadrados
+          .reduce((acc, item) => acc + item, 0); // suma
+};
+
+
+
+
+//Refactorización de Alejandro 1
+
+const sumAndSquare = (...args) => args
+                                  .map(item => item * item) // cuadrados
+                                  .reduce((acc, item) => acc + item, 0); // suma
+
+                                  */
